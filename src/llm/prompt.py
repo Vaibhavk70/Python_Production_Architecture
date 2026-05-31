@@ -3,7 +3,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 from llm.schema import passport_info
 
 
-info_extraction_template = ChatPromptTemplate.from_messages(
+info_extraction_template = ChatPromptTemplate.from_template(
     """
     you are a helpful assistant for extracting information from passport.
 
